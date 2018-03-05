@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章展开/详细</title>
+    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+        #div1{
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 800px;
+        }
+        #div11{
+            background-color: #eee;
+        }
+        #top{
+
+        }
+        img{
+            width: 100%;
+        }
+        #div111{
+            text-align: center;
+            margin-top: -8%;
+            color: white;
+        }
+        @media screen and (max-width: 768px){
+            #div111{
+                font-size: 20px;
+            }
+
+        }
+        #nav{
+            background-color: white;
+            /*margin-top: 50px;*/
+        }
+        #right0{
+
+        }
+        #right{
+            padding: 5%;
+        }
+        #right1{
+            background-color: white;
+            width: 100%;
+            height: 200px;
+        }
+        #right1 img{
+            margin-top: 60px;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+        #right2{
+            background-color: #ED6766;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+        }
+        #right2 span{
+            text-align: center;
+            color: white;
+            font-size:15px;
+            height:30px;
+            line-height:30px;
+            width:200px;
+            overflow:hidden;
+        }
+        .article-footer{
+            padding: 5%;
+        }
+        .left1{
+            height: 160px;
+            width: 100%;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+<div id="top"><img src="/images/headerbg.jpg" alt="">
+    <h2 id="div111">指点江山，舍我其谁</h2>
+</div>
+<div id="div1" >
+
+    <div id="div11">
+
+        <nav class="navbar navbar-default" id="nav">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">主页</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章分类<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">html</a></li>
+                                <li><a href="#">css</a></li>
+                                <li><a href="#">javascript</a></li>
+                                <li><a href="#">node.js</a></li>
+                                <li><a href="#">Vue</a></li>
+                                <li><a href="#">canvas</a></li>
+
+                            </ul>
+                        <li><a href="#">个人中心</a></li>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" >+点击添加文章</a></li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="请输入所要查询的内容">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索文章</button>
+                        </form>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="row">
+            <div class="col-md-8" style="padding: 2%;">
+                <!--文章详情-->
+                <div style="background: white;padding:3%">
+                    <h2>Bootstrap （Web框架）</h2>
+                    <div class="article-footer">
+                        <span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2017-03-18</span>
+                        <span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;Absolutely</span>
+                        <span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">Web前端</a></span>
+                        <span class="article-viewinfo"><i class="fa fa-eye"></i>&nbsp;0</span>
+                        <span class="article-viewinfo"><i class="fa fa-commenting"></i>&nbsp;4</span>
+                    </div>
+                    <div style="padding: 5%"><img src="/images/5431586.jpg" alt=""></div>
+                    <div>
+                        <span>
+                            Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。[1]  它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。[2]  国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。[3]
+                        </span>
+                    </div>
+                    <hr style="border: 2px solid #5e5e5e">
+                    <div style="float: right;">
+                        <button type="button" class="btn btn-default" aria-label="">
+                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                            <span>浏览量</span>
+                            <span>116</span>
+                        </button>
+                    </div>
+                    <div style="height: 100px;">
+                    </div>
+                </div>
+                <div id="left" style="padding: 2%">
+                    <% for (var i=0; i<list.length; i++) { %>
+                    <div class="article-footer"  style="text-align: center; background: white">
+                        <!--标题-->
+                        <h3><%=list[i].title%></h3>
+                        <!--标题-->
+                        <span><i class="fa fa-clock-o"></i><%=list[i].title%></span>
+
+                        <span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">类别：<%=list[i].category_id%></a></span>
+
+                        <span class="article-viewinfo"><i class="fa fa-eye"></i>作者：&nbsp<%=list[i].author%></span>
+
+                        <span class="article-viewinfo"><i class="fa fa-commenting">发布时间：</i>&nbsp;<%=list[i].create_at%></span>
+                        <!--<img src="images/546546546456.jpg" alt="" >-->
+                        <%if(list[i].img) {%>
+                        <img src="/uploads/<%=list[i].img%>"
+                             class="img-responsive"
+                             alt="实例剖析尼尔森十大交互设计原则在设计中的用法"
+                             style="padding: 6%"
+                             title="实例剖析尼尔森十大交互设计原则在设计中的用法">
+                        <% } %>
+
+                        <div style="overflow:hidden;height: 50px;">
+                            <h5><%- list[i].content %></h5>
+                        </div>
+                        <button  type="button" class="btn btn-danger" style="margin-left: 30px">
+                            <a href="/home/details" >点击阅读全文</a>
+                        </button>
+                        <button type="button" class="btn btn-default" style="margin-left: 30px">
+                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                            <span>浏览量</span>
+                            <span><%=list[i].view%></span>
+                        </button>
+                    </div>
+                    <% } %>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-4" id="right0">
+                <div id="right">
+                    <div id="right1">
+                        <div style="text-align: center;">
+                            <img src="/images/56465465.jpg">
+                        </div>
+                        <div style="width:100%;text-align: center"><p>博主简介</p></div>
+                    </div>
+                    <div id="right2">
+                        <span>谢鹏</span><br>
+                        <span>web前端开发资深工程师</span><br>
+                        <span>公众号：南征北战-</span><br>
+                    </div>
+                    <div style="background:white; text-align: center;line-height: 40px;">
+                        <span>在强者的眼中，没有最好，只有更好</span><br>
+                    </div>
+                    <div id="right3" style="margin-top: 20px">
+                        <span style="font-size:17px">个人标签</span><br>
+                        <div style="background: white; padding: 15px;line-height: 30px; ">
+                            <span class="label label-default">WEB</span>&nbsp;
+                            <span class="label label-primary">HTML</span>&nbsp;
+                            <span class="label label-success">CSS3</span>&nbsp;
+                            <span class="label label-info">Javascript</span>&nbsp;
+                            <span class="label label-warning">node</span>&nbsp;
+                            <span class="label label-danger">php</span>&nbsp;
+                        </div>
+
+                    </div>
+                    <div id="right4" style="margin-top: 20px">
+                        <span style="font-size:17px">精选文章</span><br>
+                        <a href="#"><div style="text-decoration:none;background: white; height: 300px;padding-left: 6%;padding-right: 6%;padding-top: 6%">
+                                <img src="/images/5431586.jpg" alt="" style="line-height: 30px; " >
+                                <b><h3>加油吧</h3></b>
+                                <span >浏览量</span><a >116</a>
+                            </div></a>
+
+                    </div>
+                    <div id="right5" style="margin-top: 5%">
+                        <span style="font-size:17px">热门文章</span><br>
+                        <a href="#"><div style=" text-decoration:none;background: white; height: 300px;padding-left: 6%;padding-right: 6%;padding-top: 6%">
+                                <img src="/images/3215648965.jpg" alt="" style="line-height: 30px; " >
+                                <b><h3>加油吧</h3></b>
+                                <span >浏览量</span><a >116</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="bottom" class="hidden-xs hidden-sm" style="background-color:black; height: 200px; color: white; padding: 2% ; margin-top: 35%">
+    <div style="margin-left:15%; margin-right: 5%">
+        <div class="row" style="border-bottom:1px solid white">
+            <div class="col-md-4" style="text-align: center ; border-right:1px solid white" >
+                <h3>联系方式</h3>
+            </div>
+            <div class="col-md-8">
+                <a class="navbar-brand" href="#">主页</a>
+                <a class="navbar-brand" href="#">文章推荐</a>
+                <a class="navbar-brand" href="#">个人中心</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="border-right:1px solid white">
+                <p>个人微信号：weixin</p>
+                <p>邮箱：1145114815@qq.com</p>
+                <p>微博:南征北战</p>
+            </div>
+            <div class="col-md-8" >
+                <div class="col-md-6">
+                    <img src="/images/654513.jpg" alt="" style="width: 100px">
+                    <p>个人微信号：weixin</p>
+                    <p>邮箱：1145114815@qq.com</p>
+                </div>
+                <div class="col-md-6">
+                    <p><span>Copyright</span><span>&copy;</span><span>2017</span><a href="#">融智教育</a><span>Design By LY</span></p>
+                    <p><a href="" target="_blank">豫ICP备16029915号-1</a></p>
+                    <p>邮箱：1145114815@qq.com</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

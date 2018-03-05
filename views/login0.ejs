@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style type="text/css">
+	#title{
+		color: aquamarine;
+	}
+</style>
+<body>
+	<h1 id="title"></h1>
+<script>
+    var i=6;
+    setInterval(function(){
+        i--
+        document.getElementById('title').innerHTML=`登陆成功！${i}秒后自动跳转到首页，或点此直接跳转`
+        if(i==0){
+            i=10;
+            window.location.href = '/home';
+        }
+    },1000)
+</script>
+</body>
+</html>

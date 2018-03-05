@@ -1,0 +1,70 @@
+
+1、上传图片、文件包
+$ npm install --save multer
+
+multer 使用
+
+    安装：npm install --save multer
+    
+    引入：const multer = require('multer');
+    
+    创建储存配置信息
+        var storage = multer.diskStorage({
+            destination: function (req, file, cb) {
+                cb(null, '/tmp/my-uploads')
+            },
+            filename: function (req, file, cb) {
+                let fileFormat = (file.originalname).split(".");
+                cb(null, file.fieldname + '-' + Date.now() + "." + fileFormat[fileFormat.length - 1]);
+            }
+        })
+    创建对象
+        const upload = multer({
+            storage: storage
+        });
+    
+    导出对象
+        module.exports = upload;
+    
+    使用对象
+        upload.single('img')
+
+2、
+
+express-session 使用
+
+    安装：npm install express-session --save
+    
+    引入：const session = require('express-session')
+    
+    使用：app.use(session({
+            secret: 'keyboard cat', //一个String类型的字符串，作为服务器端生成session的签名
+            resave: true, //(是否允许)当客户端并行发送多个请求时，其中一个请求在另一个请求结束时对session进行修改覆盖并保存。
+            saveUninitialized: true //初始化session时是否保存到存储
+        }))
+        
+    设置session：
+        req.session.name = name
+    获取session：
+        let name = req.session.name
+    删除session
+        req.session.destroy()
+
+    
+3、用于在页面独自判断数据存不存在，即用即删
+connect-flash 使用
+
+    安装：npm install connect-flash --save
+    
+    引入：const flash = require('connect-flash');
+    
+    使用：app.use(flash());
+    
+    设置flash：
+        req.flash('info', '这里是消息！')
+    获取flash：
+        req.flash('info');
+
+
+home 页面的登录登出事件
+在页面的发布文章按钮处进行判断，如果log

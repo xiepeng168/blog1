@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default" id="nav">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home">主页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章分类<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">node.js</a></li>
+                        <li><a href="#">Vue</a></li>
+                        <li><a href="#">canvas</a></li>
+
+                    </ul>
+                <li><a href="/home/myspace">个人中心</a></li>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/home/neww" >+点击添加文章</a></li>
+
+
+                <form class="navbar-form navbar-left" action="/">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入所要查询的内容"  name="key">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索文章</button>
+                </form>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

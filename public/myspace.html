@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="layer-v3.1.1/layer/layer.js"></script>
+    <style>
+        body{
+            background: #eeeeee;
+        }
+        #div1{
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 800px;
+            background: white;
+        }
+        #div11{
+            background-color: #eee;
+        }
+        #top{
+
+        }
+        img{
+            width: 100%;
+        }
+        #div111{
+            text-align: center;
+            margin-top: -8%;
+            color: white;
+        }
+        @media screen and (max-width: 768px){
+            #div111{
+                font-size: 20px;
+            }
+
+        }
+        #nav{
+            background-color: white;
+            /*margin-top: 50px;*/
+        }
+        #right0{
+
+        }
+        #right{
+            padding: 5%;
+        }
+        #right1{
+            background-color: white;
+            width: 100%;
+            height: 200px;
+        }
+        #right1 img{
+            margin-top: 60px;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+        #right2{
+            background-color: #ED6766;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+        }
+        #right2 span{
+            text-align: center;
+            color: white;
+            font-size:15px;
+            height:30px;
+            line-height:30px;
+            width:200px;
+            overflow:hidden;
+        }
+        .article-footer{
+            padding: 5%;
+        }
+        .left1{
+            height: 160px;
+            width: 100%;
+            background: white;
+        }
+        .bs-callout {
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #eee;
+            border-left-width: 5px;
+            border-radius: 3px;
+        }
+        .bs-callout-default {
+            border-left-color:#ED6766;
+        }
+    </style>
+</head>
+<body>
+<div id="top"><img src="images/headerbg.jpg" alt="">
+    <h2 id="div111">指点江山，舍我其谁</h2>
+</div>
+<div id="div1" >
+    <div id="div11">
+        <nav class="navbar navbar-default" id="nav">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">主页</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文章分类<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">html</a></li>
+                                <li><a href="#">css</a></li>
+                                <li><a href="#">javascript</a></li>
+                                <li><a href="#">node.js</a></li>
+                                <li><a href="#">Vue</a></li>
+                                <li><a href="#">canvas</a></li>
+                            </ul>
+                        <li><a href="#">个人中心</a></li>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" >+点击添加文章</a></li>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="请输入所要查询的内容">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索文章</button>
+                        </form>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="row" style=" background: white ;margin-left: 0px; margin-right: 0px ;margin-top: 3%">
+            <div class="col-md-2" >
+                <style>
+                    #myTab li{
+                        align-content: center;
+                        text-align: center;
+                        width: 100%;
+                        height:100px;
+                        list-style: none;
+                        background: #eeeeee;
+                    }
+                    #myTab li a{
+                        text-decoration:none;
+                        color:#333;
+                    }
+                    #myTab span{
+                        font-size: 26px;
+                    }
+                    #myTab .active{
+                        background-color:white;
+                        border-left:3px solid #f36f6a;
+                    }
+                </style>
+                <ul id="myTab">
+                    <li class="active"><a href="#home" data-toggle="tab" >
+                        <br>
+                        <br>
+                    <span class="glyphicon glyphicon-list-alt" >
+                    </span><br>
+                        <p>
+                            基本资料
+                        </p>
+                    </a>
+                    </li>
+                    <li ><a href="#ios" data-toggle="tab" >
+                        <br>
+                        <br>
+                    <span class="glyphicon glyphicon-inbox" >
+                    </span><br>
+                        <p>
+                            文章管理
+                        </p>
+                    </a>
+                    </li>
+                    <li ><a href="#jmeter" data-toggle="tab" >
+                        <br>
+                        <br>
+                    <span class="glyphicon glyphicon-tags" >
+                    </span><br>
+                        <p>
+                            分类管理
+                        </p>
+                    </a>
+                    </li>
+                    <li ><a href="#ejb" data-toggle="tab" >
+                        <br>
+                        <br>
+                    <span class="glyphicon glyphicon-trash" >
+                    </span><br>
+                        <p>
+                            草稿箱
+                        </p>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+<div class="col-md-10" style="background: white;  margin-left:0px">
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active row" id="home">
+            <form style="padding: 2%" class="col-md-8">
+                <div class="form-group">
+                    <label >昵称：</label><span>它是首页的名字</span>
+                    <input type="text" class="form-control  input-lg"  >
+                </div>
+                <div class="form-group">
+                    <label >个性签名：</label><span>你的设计感悟或者一句话</span>
+                    <input type="text" class="form-control  input-lg"  >
+                </div>
+                <div class="form-group">
+                    <label >职位：</label><span>你曾经的职位或者现在的职位</span>
+                    <input type="text" class="form-control  input-lg"  >
+                </div>
+                <div class="form-group">
+                    <label >社交账号：</label><span>可以让大家通过更多渠道了解你</span>
+                    <input type="text" class="form-control  input-lg" >
+                </div>
+
+                <button type="submit" class="btn btn-default" style="background:#f36f6a ">确&nbsp定</button>
+                <button type="button" class="btn btn-default">取&nbsp消</button>
+            </form>
+            <div style="padding: 3%" class="col-md-4">
+                <div style="background: #fc5c50;text-align: center; padding: 20px;height: 300px;">
+                    <div style="text-align: center; padding: 20px">
+                        <img src="/images/56465465.jpg" style="width:100px;height:100px;border-radius: 60px" id="view">
+                    </div>
+                        <!--<div id="view" style="width: 200px; height: 160px; background: white"></div>-->
+                        <div>
+                            <button type="button" class="btn btn-default">点击更改头像</button>
+                                <input type="file" value="点击上传封面图片"  onchange="viewImg(this)" style="position: absolute;top: 180px; opacity: 0">
+
+                        </div>
+                        <button id="test1" type="button" class="btn btn-default" style="margin-top: 20px;">
+                            点击修改密码</button>
+                        <script>
+                            function viewImg(file) {
+                                var div =document.getElementById('view');
+                                var fileRrader = new FileReader();
+                                if(file.files && file.files[0]){
+                                    fileRrader.readAsDataURL(file.files[0]);
+                                    fileRrader.onload=function (ev) {
+                                        // ev.target.result;
+                                        div.innerHTML = "<img src='"+ev.target.result+"'>"
+                                    }
+                                }
+                            }
+                            //prompt层
+                            $('#test1').on('click', function(){
+                                layer.open({
+                                    type: 1,
+                                    skin: 'layui-layer-rim', //加上边框
+                                    area: ['420px', '340px'], //宽高
+                                    content: '<form style="padding: 2%" >\n' +
+                                    '                <div class="form-group">\n' +
+                                    '                    <label >原密码：</label>\n' +
+                                    '                    <input type="text" class="form-control"  >\n' +
+                                    '                </div>\n' +
+                                    '                <div class="form-group">\n' +
+                                    '                    <label >新密码：</label>\n' +
+                                    '                    <input type="text" class="form-control"   >\n' +
+                                    '                </div>\n' +
+                                    '                <div class="form-group">\n' +
+                                    '                    <label >请再次输入新密码：</label>\n' +
+                                    '                    <input type="text" class="form-control"  >\n' +
+                                    '                </div>\n' +
+
+                                    '                <button type="button" class="btn btn-default">取&nbsp;消</button>\n' +
+                                    '                <button type="button" class="btn btn-default">确&nbsp;定</button>\n' +
+                                    '            </form>'
+                                });
+                            });
+
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+        <div class="tab-pane fade" id="ios">
+            <nav class="navbar navbar-default" style="margin-top: 2%">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" >
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">全部<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">标题</a></li>
+                                    <li><a href="#">关键字</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="请输入关键字">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> 精选
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="/images/index.png" >
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>...</p>
+                            <p>
+                                <span>2018-03-02</span>
+                                <a href="#" class="btn btn-danger" role="button">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 删除
+                            </a>&nbsp;<a href="#" class="btn btn-primary" role="button">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="jmeter">
+            <div class="bs-callout bs-callout-default">
+                导航分类管理
+            </div>
+            <button type="submit" class="btn btn-primary">添加</button>
+            <table class="table">
+                <tr>
+                    <td>名称</td>
+                    <td>路径</td>
+                    <td>父分类</td>
+                    <td>排序字段</td>
+                    <td>分类模板</td>
+                    <td>导航是否显示</td>
+                    <td>操作</td>
+                </tr>
+                <tr><td>首页</td>
+                    <td>/</td>
+                    <td>无</td>
+                    <td>100</td>
+                    <td>template</td>
+                    <td>
+                        <li class='tg-list-item'>
+                            <input class='tgl tgl-ios' id='cb1' type='checkbox'>
+                            <label class='tgl-btn' for='cb1'></label>
+                        </li>
+                    </td>
+                    <td>
+                        <span class="btn btn-primary">编辑</span>
+                        <span class="btn btn-danger">删除</span>
+                    </td>
+                </tr>
+                <tr><td>首页</td>
+                    <td>/</td>
+                    <td>无</td>
+                    <td>100</td>
+                    <td>template</td>
+                    <td>
+                        <li class='tg-list-item'>
+                            <input class='tgl tgl-ios' id='cb2' type='checkbox'>
+                            <label class='tgl-btn' for='cb2'></label>
+                        </li>
+                    </td>
+                    <td>
+                        <span class="btn btn-primary">编辑</span>
+                        <span class="btn btn-danger">删除</span>
+                    </td>
+                </tr>
+                <tr><td>首页</td>
+                    <td>/</td>
+                    <td>无</td>
+                    <td>100</td>
+                    <td>template</td>
+                    <td>
+                        <li class='tg-list-item'>
+                            <input class='tgl tgl-ios' id='cb3' type='checkbox'>
+                            <label class='tgl-btn' for='cb3'></label>
+                        </li>
+                    </td>
+                    <td>
+                        <span class="btn btn-primary">编辑</span>
+                        <span class="btn btn-danger">删除</span>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        <div class="tab-pane fade" id="ejb">
+            <p>Enterprise Java Beans (EJB) is a development architecture
+                for building highly scalable and robust enterprise level
+                applications to be deployed on J2EE compliant
+                Application Server such as JBOSS, Web Logic etc.
+            </p>
+        </div>
+    </div>
+</div>`
+    <script>
+        $(function () {
+            $('#myTab li:eq(0) a').tab('show');
+
+        });
+    </script>
+</div>
+
+
+</div>
+        <!--站位-->
+        <div style="height: 200px; background: white">
+
+        </div>
+<div id="bottom" class="hidden-xs hidden-sm" style="background-color:black; height: 200px; color: white; padding: 2% ; margin-top: 35%">
+    <div style="margin-left:15%; margin-right: 5%">
+        <div class="row" style="border-bottom:1px solid white">
+            <div class="col-md-4" style="text-align: center ; border-right:1px solid white" >
+                <h3>联系方式</h3>
+            </div>
+            <div class="col-md-8">
+                <a class="navbar-brand" href="#">主页</a>
+                <a class="navbar-brand" href="#">文章推荐</a>
+                <a class="navbar-brand" href="#">个人中心</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" style="border-right:1px solid white">
+                <p>个人微信号：weixin</p>
+                <p>邮箱：1145114815@qq.com</p>
+                <p>微博:南征北战</p>
+            </div>
+            <div class="col-md-8" >
+                <div class="col-md-6">
+                    <img src="images/654513.jpg" alt="" style="width: 100px">
+                    <p>个人微信号：weixin</p>
+                    <p>邮箱：1145114815@qq.com</p>
+                </div>
+                <div class="col-md-6">
+                    <p><span>Copyright</span><span>&copy;</span><span>2017</span><a href="#">融智教育</a><span>Design By LY</span></p>
+                    <p><a href="" target="_blank">豫ICP备16029915号-1</a></p>
+                    <p>邮箱：1145114815@qq.com</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
